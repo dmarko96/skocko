@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skocko-Podesavanja</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="script.js"></script>
+</head>
+<body onload="podPokreni()">
+    <div class="pocetna">
+        <table class="pocTable">
+            <tr>
+                <th colspan="2">
+                    <h1>Podesavanja</h1>
+                </th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table id="inTable" class="podesavanjaTabela">
+                        <td><img src="skocko-dodatno/prazan.jpg" class="" alt="Empty"></td>
+                        <td><img src="skocko-dodatno/prazan.jpg" class="" alt="Empty"></td>
+                        <td><img src="skocko-dodatno/prazan.jpg" class="" alt="Empty"></td>
+                        <td><img src="skocko-dodatno/prazan.jpg" class="" alt="Empty"></td>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table id="unosTabela" class="podesavanjaTabela">
+                        <tr>
+                            <td><img src="skocko-dodatno/herc.jpg" alt="Herc" class="herc"></td>
+                            <td><img src="skocko-dodatno/karo.jpg" alt="Karo" class="karo"></td>
+                            <td><img src="skocko-dodatno/pik.jpg" alt="Pik" class="pik"></td>
+                            <td><img src="skocko-dodatno/skocko.jpg" alt="Skocko" class="skocko"></td>
+                            <td><img src="skocko-dodatno/tref.jpg" alt="Tref" class="tref"></td>
+                            <td><img src="skocko-dodatno/zvezda.jpg" alt="Zvezda" class="zvezda"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="podObrisi()" class="dugme1">
+                        Obrisi
+                    </button>
+                </td>
+                <td>
+                    <button onclick="podPotvrdi()" class="dugme1">
+                        Potvrdi
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p id="podesavanjaGreska">
+
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

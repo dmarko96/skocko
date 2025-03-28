@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+
+</head>
+<body onload="igraInit()">  
+    <table id="igraTabela">
+        <tr>
+            <td colspan="1">
+                <button onclick="pokreni()" id="kreniDugme" class="dugme1">
+                    Start
+                </button>
+            </td>
+            <td colspan="1">
+                <button onclick="podesavanja()" id="podesavanjaDugme" class="dugme1">
+                    Nova igra
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="timerPlayer1" class="timer">
+                    60
+                </div>
+            </td>
+            <td>
+                <div id="timerPlayer2" class="timer">
+                    60
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <!-- ekran prvog igraca -->
+            <td>
+                <table id="ekranPlayer1" class="ekranIgraca">
+                    <tr>
+                        <td>
+                            <table class="kombTabela">
+                                <td><img src="skocko-dodatno/prazan.jpg" class="" alt="Empty"></td>
+                                <td><img src="skocko-dodatno/prazan.jpg" class="" alt="Empty"></td>
+                                <td><img src="skocko-dodatno/prazan.jpg" class="" alt="Empty"></td>
+                                <td><img src="skocko-dodatno/prazan.jpg" class="" alt="Empty"></td>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="proveraTabela">
+                                <td><img src="skocko-dodatno/none.jpg" class="" alt="Empty"></td>
+                                <td><img src="skocko-dodatno/none.jpg" class="" alt="Empty"></td>
+                                <td><img src="skocko-dodatno/none.jpg" class="" alt="Empty"></td>
+                                <td><img src="skocko-dodatno/none.jpg" class="" alt="Empty"></td>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr><td><br></td></tr>
+                    <tr>
+                        <td colspan="1">
+                            <table class="kombTabela" id="resenjePlayer1">
+                                <td><img src="skocko-dodatno/prazan.jpg" class="" alt="Empty"></td>
+                                <td><img src="skocko-dodatno/prazan.jpg" class="" alt="Empty"></td>
+                                <td><img src="skocko-dodatno/prazan.jpg" class="" alt="Empty"></td>
+                                <td><img src="skocko-dodatno/prazan.jpg" class="" alt="Empty"></td>
+                            </table>
+                        </td>
+                        <td colspan="1">
+                            <table id="inputPlayer1" class="proveraTabela inputTabela">
+                                <td><img src="skocko-dodatno/herc.jpg" alt="Herc" class="herc"></td>
+                                <td><img src="skocko-dodatno/karo.jpg" alt="Karo" class="karo"></td>
+                                <td><img src="skocko-dodatno/pik.jpg" alt="Pik" class="pik"></td>
+                                <td><img src="skocko-dodatno/skocko.jpg" alt="Skocko" class="skocko"></td>
+                                <td><img src="skocko-dodatno/tref.jpg" alt="Tref" class="tref"></td>
+                                <td><img src="skocko-dodatno/zvezda.jpg" alt="Zvezda" class="zvezda"></td>
+                        </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button onclick="brisiPlayer1()" id="brisiPlayer1" class="dugmeUnos">
+                                Obrisi
+                            </button>
+                            <button onclick="unosPlayer1()" id="unesiPlayer1" class="dugmeUnos">
+                                Unesi
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <!-- ekran drugog igraca -->
+            <td>
+                <table id="ekranPlayer2" class="ekranIgraca">
+                    <tr>
+                        <td>
+                            <table class="kombTabela">
+                                <td><img src="skocko-dodatno/prazan.jpg" class="" alt="Empty"></td>
+                                <td><img src="skocko-dodatno/prazan.jpg" class="" alt="Empty"></td>
+                                <td><img src="skocko-dodatno/prazan.jpg" class="" alt="Empty"></td>
+                                <td><img src="skocko-dodatno/prazan.jpg" class="" alt="Empty"></td>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="proveraTabela">
+                                <td><img src="skocko-dodatno/none.jpg" class="" alt="Empty"></td>
+                                <td><img src="skocko-dodatno/none.jpg" class="" alt="Empty"></td>
+                                <td><img src="skocko-dodatno/none.jpg" class="" alt="Empty"></td>
+                                <td><img src="skocko-dodatno/none.jpg" class="" alt="Empty"></td>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr><td><br></td></tr>
+                    <tr>
+                        <td colspan="1">
+                            <table class="kombTabela" id="resenjePlayer2">
+                                <td><img src="skocko-dodatno/prazan.jpg" class="" alt="Empty"></td>
+                                <td><img src="skocko-dodatno/prazan.jpg" class="" alt="Empty"></td>
+                                <td><img src="skocko-dodatno/prazan.jpg" class="" alt="Empty"></td>
+                                <td><img src="skocko-dodatno/prazan.jpg" class="" alt="Empty"></td>
+                            </table>
+                        </td>
+                        <td colspan="1">
+                            <table id="inputPlayer2" class="proveraTabela inputTabela">
+                                <td><img src="skocko-dodatno/herc.jpg" alt="Herc" class="herc"></td>
+                                <td><img src="skocko-dodatno/karo.jpg" alt="Karo" class="karo"></td>
+                                <td><img src="skocko-dodatno/pik.jpg" alt="Pik" class="pik"></td>
+                                <td><img src="skocko-dodatno/skocko.jpg" alt="Skocko" class="skocko"></td>
+                                <td><img src="skocko-dodatno/tref.jpg" alt="Tref" class="tref"></td>
+                                <td><img src="skocko-dodatno/zvezda.jpg" alt="Zvezda" class="zvezda"></td>
+                        </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button onclick="brisiPlayer2()" id="brisiPlayer2" class="dugmeUnos">
+                                Obrisi
+                            </button>
+                            <button onclick="unosPlayer2()" id="unesiPlayer2" class="dugmeUnos">
+                                Unesi
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

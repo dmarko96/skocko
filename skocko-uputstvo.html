@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skocko-Podesavanja</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="script.js"></script>
+</head>
+<body class="pocetna">
+    <table class="pocTable">
+        <tr>
+            <th colspan="2">
+                <h1>Igra Skocko</h1>
+            </th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <br>
+                Игру играју два играча.
+                Сваки играч треба да погоди комбинацију од четири знака задату од стране другог играча. 
+                Играчи имају по седам покушаја да погоде тражену комбинацију. 
+                За сваки покушај, играч добија информацију о томе колико знакова је тачно погођено и на одговарајућој позицији, 
+                а колико знакова је тачно погођено, али није на одговарајућој позицији. 
+                Играчи на располагању имају по 60 секунди за погађање комбинације.
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <form>
+                <td>
+                    <table class="pocTable">
+                        <tr>
+                            <th colspan="2">Player 1 <hr></th>
+                        </tr>
+                        <tr>
+                            <td>Ime:</td>
+                            <td><input type="text" name="imePlayer1" id="imePlayer1"></td>
+                        </tr>
+                        <tr>
+                            <td>Razumem upustvo</td>
+                            <td><input type="checkbox" name="slazePlayer1" id="slazePlayer1"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="pocTable">
+                        <tr>
+                            <th colspan="2">Player 2 <hr></th>
+                        </tr>
+                        <tr>
+                            <td>Ime:</td>
+                            <td><input type="text" name="imePlayer2" id="imePlayer2"></td>
+                        </tr>
+                        <tr>
+                            <td>Razumem upustvo</td>
+                            <td><input type="checkbox" name="slazePlayer2" id="slazePlayer2"></td>
+                        </tr>
+                    </table>
+                </td>
+            </form>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="unosUputstva()" class="dugme1">
+                    Nastavi
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div id="uputstvoInfo">
+
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
